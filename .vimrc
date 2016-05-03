@@ -18,6 +18,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'bling/vim-airline'
+Plugin 'szw/vim-tags'
 Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 filetype plugin indent on
@@ -35,6 +36,7 @@ map <S-k> :bp<cr>
 set number
 "allows usage of mouse
 set mouse=a
+set laststatus=2
 "allows backspace over everything in insert moed
 set sw=2 sts=2 et
 au BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
@@ -51,5 +53,5 @@ let g:airline_section_b = '%{strftime("%c")}'
 autocmd BufEnter * let &titlestring = hostname() . "[vim(" . expand("%:t") . ")]"
 colorscheme jellybeans
 let g:vimrubocop_config = '~/rubocop.yml'
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p

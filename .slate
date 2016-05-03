@@ -51,7 +51,6 @@ bind esc:cmd hint
 
 # FastSwitch
 bind j:cmd focus 'Google Chrome'
-bind k:cmd focus 'Emacs'
+bind e:cmd focus 'Emacs'
 bind l:cmd focus 'iTerm'
 bind h:cmd focus 'Slack'
-bind i:cmd focus 'irssi'
